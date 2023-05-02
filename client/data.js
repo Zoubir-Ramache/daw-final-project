@@ -1,0 +1,9 @@
+const data =[
+    {price:"360", name: "images/pexels-ash-376464.jpg",},
+    {price:"420", name: "images/pexels-engin-akyurt-1527603.jpg"},
+    {price:"5000", name: "images/pexels-jonathan-borba-2983099.jpg"},
+    {price:"650", name: "images/pexels-nishant-aneja-2955819.jpg"},
+    {price:"990", name: "images/pexels-rajesh-tp-1624487.jpg"},
+    {price:"100", name: "images/pexels-rajesh-tp-1633525.jpg"},
+    {price:"700", name: "images/pexels-robin-stickel-70497.jpg"}]
+export default data

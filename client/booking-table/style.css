@@ -1,0 +1,30 @@
+* {
+
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    background: #000;
+    color: aliceblue;
+}
+h1{
+
+    margin: 30px;
+}
+#tables{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+#tables div{
+    margin-top: 30px;
+}
+[type = date] {
+    display: none;
+}

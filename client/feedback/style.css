@@ -1,0 +1,31 @@
+* {
+
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-around;
+    font-weight: bold;
+    background: #000;
+    color: aliceblue;
+    flex-direction: column;
+}
+div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: x-large;
+    border: 2px solid #fef ;
+    border-radius: 20%;
+    padding: 10px;
+}
