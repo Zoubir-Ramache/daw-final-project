@@ -1,12 +1,12 @@
 <?php
 
 
-
+//don`t forget to change this 
 $servername = "localhost";
-$username = "zoubir";
+$username = "your username ";
 $password = "password2003";
-$dbname = "guest_db";
-
+$dbname = "your db name ";
+ 
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
