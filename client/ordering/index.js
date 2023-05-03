@@ -7,7 +7,6 @@ async function  start() {
     try {
         
         food = await fetch("http://localhost:3000/index.php").then((data)=>data.json())
-        // console.log(food[0].name);
         
         data.forEach((element , i) => {
             const mydiv =document.createElement("div")
@@ -16,7 +15,6 @@ async function  start() {
         mydiv.appendChild(price)
         mydiv.appendChild(image)
         price.textContent=`${food && food[i].price}$`
-        // console.log(food[i].name);
         price.classList.add("price")
         mydiv.classList.add("mydiv")
         image.src=`../${element.url}`
