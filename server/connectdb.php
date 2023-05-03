@@ -3,9 +3,9 @@
 
 //don`t forget to change this 
 $servername = "localhost";
-$username = "your username ";
-$password = "password2003";
-$dbname = "your db name ";
+$username = "zoubir";
+$password = "zoubir3";
+$dbname = "guest_db";
  
 
 // Create connection
