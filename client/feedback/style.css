@@ -18,10 +18,12 @@ body {
 }
 div{
     width: 100%;
+    padding: 20px;
     display: flex;
     justify-content: space-around;
 }
-a{
+a {
+    background: #000;
     color: aliceblue;
     text-decoration: none;
     font-size: x-large;
@@ -29,15 +31,13 @@ a{
     border-radius: 20%;
     padding: 10px;
 }
-
-
-
-
-
-
-*{
-    margin: 0;
-    padding: 0;
+button{
+    background: linear-gradient( 45deg , rgb(3, 32, 94) , rgb(132, 0, 255) );
+    padding: 5px;
+    border-radius: 20%;
+    padding-inline: 30px;
+    font-size: larger;
+    font-weight: bold;
 }
 .rate {
     float: left;
@@ -75,7 +75,6 @@ a{
     color: #c59b08;
 }
 
-/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
 
 
 

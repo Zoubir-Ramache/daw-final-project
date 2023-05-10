@@ -3,7 +3,7 @@ import data from '../data.js';
 const foodList=document.getElementById('foodList')
  let food;
  const handlorder =async() =>{
-
+alert('ok')
  }
 async function  start() {
     
@@ -13,16 +13,16 @@ async function  start() {
         
         data.forEach((element , i) => {
             const mydiv =document.createElement("div")
-        const price =document.createElement("span")
-        const order =document.createElement("button")
+            const price =document.createElement("span")
+            const order =document.createElement("button")
 
         const image= document.createElement("img")
         mydiv.appendChild(price)
-        mydiv.appendChild(image)
         mydiv.appendChild(order)
+        mydiv.appendChild(image)
         order.classList.add('order')
-        order.onclick=handlorder()
-        order.textContent="order"
+        order.onclick=handlorder
+        order.textContent="buy"
         price.textContent=`${food && food[i].price}$`
         price.classList.add("price")
         mydiv.classList.add("mydiv")

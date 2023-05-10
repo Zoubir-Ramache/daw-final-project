@@ -6,6 +6,7 @@
 }
 
 body {
+    font-family: 'Courier New', Courier, monospace;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -95,17 +96,20 @@ a:hover {
 
     box-shadow: 3px 0 30px #00ccff;
     transform: scale(1.1);
-    color: rgb(11, 6, 82);
+    /* color: rgb(11, 6, 82); */
+    padding-top: 5px;
 }
 
 .logout,
 a {
 
     border-radius: 10px;
-    font-family: "Avenir Next";
+    /* font-family: "Avenir Next"; */
+    font-family: 'Courier New', Courier, monospace;
+
     font-size: 20px;
     padding: 0.5rem 3rem;
-    color: black;
+    /* color: black; */
     box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
     border: solid 3px transparent;
     background-image: linear-gradient(rgba(255, 255, 255, 0),
@@ -124,7 +128,7 @@ a {
 
 }
 
-.logout:hover {
+.logout:hover , a:hover {
     color: rgb(20, 20, 20);
     box-shadow: 2px 1000px 1px #edf3f9 inset;
 

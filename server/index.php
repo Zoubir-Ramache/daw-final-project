@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Collect the data submitted through the form
     $json = file_get_contents('php://input');
     $data = json_decode($json);
-    //!sing upr
+    //!sing up
     if ($data->method == 'sing-up') {
         if (!preg_match("/^[a-zA-Z]{2,}$/", $data->name)) {
             echo json_encode(" Invalid name: must contain only letters and be at least 2 characters long");
