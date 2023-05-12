@@ -17,7 +17,11 @@ const handlLogin=async()=>{
       })
       .then(response=>response.json())
       .then(data=> response= data)
-      .catch(err=>console.log(err))
+      .catch(err=>{
+        console.log(err)
+        document.getElementById('error').style.display="block"
+        document.getElementById('error').textContent=err
+      })
       if (response === "failed") {
         document.getElementById('error').style.display="block"
       }else{
@@ -47,11 +51,15 @@ const handlSingUp=async()=>{
     })
     .then(response => response.json())
     .then(data => response= data)
-    .catch(error => {
-      console.error(error)});
-    if(response=="good"){
+    .catch(err=>{
+      console.log(err)
+      document.getElementById('errorS').style.display="block"
+      document.getElementById('errorS').textContent=err
+      
+    })
+  if(response=="good"){
        window.location.href="http://127.0.0.1:5501/auth/"
-    }else{
+    }else if(response){
       document.getElementById('errorS').style.display="block"
       document.getElementById('errorS').textContent=response
       console.log(response);

@@ -5,26 +5,144 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     font-weight: bold;
     background: #000;
     color: aliceblue;
-}
-h1{
+} */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    background-image: url('../images/new/pexels-mat-brown-1395967.jpg');
+    background-size: cover;
+    background-position: top;
+    /* animation: bodyanimation 100s infinite; */
 
-    margin: 30px;
 }
-#tables{
+
+@keyframes bodyanimation {
+    50% {
+        background-position: bottom;
+    }
+
+    70% {
+        background-position: center;
+    }
+
+    100%,
+    0% {
+        background-position: top;
+    }
+}
+
+h1 {
+
+
+    top: 0%;
+    text-transform: capitalize;
+    position: fixed;
+    z-index: 20;
+    padding-top: 30px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0)),
+        linear-gradient(101deg, #00ccff, #d400d4);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+    font-weight: bolder;
+
+
+
+
+}
+
+#tables {
     width: 100%;
     height: auto;
     padding: 30px;
+    margin-top: 100px;
+    border-radius: 1%;
+    background-image:    linear-gradient(45deg, #00ccff , #d400d4, transparent, transparent);
+    border: 1px solid #00c0f0;
+    box-shadow: inset 2px 2px 1px #d400d4 , 
+    inset 0px 0px 2px #00ccff , 
+    inset 0px 0px 30px #d400d4;
+    backdrop-filter: blur(3px);
+    
 }
-#tables div{
-    margin-top: 30px;
+
+#tables div {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5%;
+    animation: animatedtable 2s infinite;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0 0 20px rgb(155, 150, 150);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px #00c0f0;
+
 }
-[type = date] {
+[type=checkbox]{
+    color: black;
+    height: 20px;
+    border-radius:50%;
+
+    width: 20px;
+}
+[type=date] {
     display: none;
+    padding: 2px;
+    border-radius: 5%;
+    background: transparent;
+    font-weight: bolder;
+    font-size: larger;
+
+}
+
+
+button{
+
+
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+
+    font-size: 20px;
+    padding: 0.5rem 3rem;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0)),
+        linear-gradient(101deg, #00ccff, #d400d4);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: none;
+    color: #edf3f9;
+    width: 100%;
+    font-weight: bolder;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.3s ease;
+
+}
+
+button:hover{
+    color: rgb(20, 20, 20);
+    box-shadow: 2px 1000px 1px #edf3f9 inset;
+
+
 }

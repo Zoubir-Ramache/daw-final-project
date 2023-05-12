@@ -112,3 +112,15 @@ h1 {
     /* color: #00ccff; */
     text-shadow: 0 0 10px #00ccff;
 }
+
+.error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    background: #000;
+    height: 10vh;
+    font-weight: bolder;
+    font-size: 25px;
+    width: 100vw;
+}

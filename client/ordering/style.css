@@ -142,3 +142,18 @@ h1 {
     right:-20px;
 
 }
+
+
+
+
+.error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    background: #000;
+    height: 10vh;
+    font-weight: bolder;
+    font-size: 25px;
+    width: 100vw;
+}

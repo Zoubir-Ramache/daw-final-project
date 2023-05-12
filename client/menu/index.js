@@ -30,6 +30,7 @@ async function start() {
         const err = document.createElement('div')
         err.textContent=error
         document.body.appendChild(err)
+        err.classList.add('error')
     }
 }
 start()
