@@ -3,7 +3,7 @@ Content-Type: application/json
 
 {
     
-    "method" : "sing-up",
+    "method" : "getdata",
    "name":"myname5" ,
     "password":"myhdjhsjh4"
 }

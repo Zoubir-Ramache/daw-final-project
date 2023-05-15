@@ -26,7 +26,26 @@ for (let i = 1; i < 9; i++) {
     
 }
 
-const send= ()=>{
-    alert('your request has been send ')
+const send= async(i)=>{
+
+    const date = document.getElementById(`date${i}`).value
+    const userid =localStorage.getItem('user')
+    let response;
+    await fetch("http://localhost:3000/index.php", {
+        method: 'POST',
+        body: JSON.stringify({method:'booktable'  , id: userid , tableid:i , date:date }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response=>response.json())
+    .then(data=> response= data)
+    .catch(err=>{
+        console.log(err)
+    })
+    if(response == "good"){
+        alert('your request has been send ')
+    }
+
 }
 

@@ -6,7 +6,7 @@ $servername = "localhost";
 $username = "zoubir";
 $password = "zoubir3";
 $dbname = "guest_db";
- 
+
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -15,5 +15,3 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
-?>
